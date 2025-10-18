@@ -1,0 +1,136 @@
+/* App-specific styles only */
+.App {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Ensure proper section spacing */
+section {
+  position: relative;
+}
+
+/* Utility classes for common patterns */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Loading state styles */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #045c5a;
+}
+
+/* Error boundary styles */
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.error-boundary h1 {
+  color: #023a3a;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.error-boundary p {
+  color: #045c5a;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.error-boundary button {
+  background: linear-gradient(135deg, #d4b87c 0%, #b8904c 100%);
+  color: #023a3a;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.error-boundary button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 184, 124, 0.4);
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .hero-buttons,
+  .carousel-btn,
+  .discover-btn {
+    display: none !important;
+  }
+  
+  .hero-section,
+  .attractions-section {
+    break-inside: avoid;
+    height: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hero-section {
+    background: #000 !important;
+  }
+  
+  .attractions-section {
+    background: #fff !important;
+  }
+  
+  .section-title,
+  .hero-title {
+    color: #000 !important;
+  }
+}

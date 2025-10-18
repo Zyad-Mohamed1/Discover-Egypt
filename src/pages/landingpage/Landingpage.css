@@ -1,0 +1,24 @@
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  padding-top: 70px;
+  /* Account for fixed navbar */
+}
+
+/* Ensure sections stack properly */
+section {
+  position: relative;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
