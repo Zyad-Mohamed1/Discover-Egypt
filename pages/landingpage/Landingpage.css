@@ -1,0 +1,27 @@
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  
+  
+ 
+}
+
+.main-content {
+  padding-top: 70px;
+  
+}
+
+
+section {
+  position: relative;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  overflow-x: hidden;
+}
